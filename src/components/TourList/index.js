@@ -18,11 +18,11 @@ export default class TourList extends Component {
     });
   };
   render() {
-    const { tours } = this.state;
+    // const { tours } = this.state;
 
     return (
       <section className="tourlist">
-        {tours.map(tour => (
+        {this.state.tours.map(tour => (
           <Tour key={tour.id} tour={tour} removeTour={this.removeTour} />
         ))}
       </section>
