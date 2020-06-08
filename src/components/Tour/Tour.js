@@ -12,7 +12,7 @@ export default class Tour extends Component {
     });
   };
   render() {
-    const { id, city, img, name, info } = this.props.tour;
+    const { id, place, img, name, info } = this.props.tour;
     const { removeTour } = this.props;
     return (
       <article className="tour">
@@ -24,11 +24,12 @@ export default class Tour extends Component {
               removeTour(id);
             }}
           >
-            <i className="fas fa-window-close" />
+            {/* <i className="fas fa-window-close" /> */}
           </span>
         </div>
+        
         <div className="tour-info">
-          <h3>{city}</h3>
+          <h3>{place}</h3>
           <h4>{name}</h4>
           <h5>
             info{" "}

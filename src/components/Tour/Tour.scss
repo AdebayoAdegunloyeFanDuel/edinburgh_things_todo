@@ -3,11 +3,13 @@
 
 .tour {
   background: $mainGrey;
+  border-radius: 0.8rem;
   margin: 2rem 0;
   img {
     width: 100%;
     display: block;
     min-height: 13rem;
+    border-top-left-radius: 0.8rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -37,6 +39,7 @@
 }
 .tour-info {
   padding: 1rem 0.5rem;
+  display: block;
 
   h3 {
     text-transform: uppercase;
